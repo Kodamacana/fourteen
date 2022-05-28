@@ -9,6 +9,8 @@ namespace Controller
         [SerializeField] DialogueManager dialogueManager;
         [SerializeField] DialogueTrigger DialogueTrigger;
         [SerializeField] Animator DialogueBoxAnim;
+        [SerializeField] Animator ClockAnim;
+        [SerializeField] Animator PanelShakeAnim;
 
 
         private void Start()
@@ -28,6 +30,9 @@ namespace Controller
             DialogueBoxAnim.gameObject.SetActive(true);
             DialogueBoxAnim.SetBool("SlideStartAnim", true);
             DialogueTrigger.TriggerDialogue();
+
+            ClockAnim.SetTrigger("StartClockAnim");
+            PanelShakeAnim.SetTrigger("StartPanelShake");
         }
     }
 }
