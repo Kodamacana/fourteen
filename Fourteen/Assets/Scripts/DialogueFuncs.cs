@@ -22,20 +22,25 @@ public class DialogueFuncs : MonoBehaviour
     }
     public void contiuneclock()
     {
+        //hediye paketi yukarıdan düşsün ve fırın pişirme sesi duyulsun
         StartCoroutine(controller.ContiuneAnim());
     }
-
-
-    public void t_utan()
+    
+    public void camN_uzak()
     {
-        //animator
+
     }
+    public void camN_yakin()
+    {
+
+    }
+    public void ngulme()
+    {
+
+    }
+
 
     public void camT_uzak()
-    {
-
-    }
-    public void camN_uzak()
     {
 
     }
@@ -43,8 +48,13 @@ public class DialogueFuncs : MonoBehaviour
     {
 
     }
-    public void camN_yakin()
+    public void t_utan()
     {
+        //animator
+    }
 
+    public void flashcameraslide()
+    {
+        //camera flash belleğe doğru yaklaşır ekran kararır müzik kesilir e sakince sahne 1 başlar 
     }
 }

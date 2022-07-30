@@ -79,6 +79,13 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+
+        controller.N_DialogueBoxAnim.SetBool("SlideStopAnim", true);
+        controller.T_DialogueBoxAnim.SetBool("SlideStopAnim", true);
+        controller.ResetAnim();
+
+        controller.N_DialogueBoxAnim.gameObject.SetActive(false);
+        controller.T_DialogueBoxAnim.gameObject.SetActive(false);
         Debug.Log("diyalog bitti");
     }
 }

@@ -762,11 +762,11 @@ MonoBehaviour:
   - sentences:
     - Tm
     isNurdan: 1
-    FuncNote: 
+    FuncNote: startclock
   - sentences:
     - Hediyem nerde?
     isNurdan: 1
-    FuncNote: startclock
+    FuncNote: 
   - sentences:
     - "Daha haz\u0131r de\u011Fil :))"
     isNurdan: 0
@@ -807,6 +807,31 @@ MonoBehaviour:
     - Yaaaa
     isNurdan: 1
     FuncNote: 
+  - sentences:
+    - "A\xE7 bakal\u0131m"
+    isNurdan: 0
+    FuncNote: 
+  - sentences:
+    - "Bana flash bellek mi ald\u0131nn, tam ihtiyac\u0131m olan \u015Fey"
+    isNurdan: 1
+    FuncNote: ngulme
+  - sentences:
+    - "\u0130\xE7ine en g\xFCzel anlar\u0131 depolaman i\xE7in ald\u0131m."
+    isNurdan: 0
+    FuncNote: 
+  - sentences:
+    - "\xC7ok te\u015Fekk\xFCr ederim :)"
+    isNurdan: 1
+    FuncNote: 
+  - sentences:
+    - "\u0130\xE7ine ben bir ka\xE7 an\u0131 ekledim."
+    isNurdan: 0
+    FuncNote: 
+  - sentences:
+    - "Tesad\xFCfe bak bug\xFCn de bilgisayar\u0131n\u0131 getirmeni istemi\u015Ftim
+      als\u015Fdma"
+    isNurdan: 0
+    FuncNote: flashcameraslide
 --- !u!95 &1212982645 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5461639170312550456, guid: 06e1bd038d43a4b38a8976cfa2196248,
@@ -1863,7 +1888,7 @@ PrefabInstance:
     - target: {fileID: 6889698613529302139, guid: 631b02b48ff11474983651fd4814ae2b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6889698613529302142, guid: 631b02b48ff11474983651fd4814ae2b,
         type: 3}

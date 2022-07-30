@@ -9,8 +9,8 @@ namespace Controller
     {
         [SerializeField] DialogueManager dialogueManager;
         [SerializeField] DialogueTrigger DialogueTrigger;
-        [SerializeField] Animator T_DialogueBoxAnim;
-        [SerializeField] Animator N_DialogueBoxAnim;
+        [SerializeField] public Animator T_DialogueBoxAnim;
+        [SerializeField] public Animator N_DialogueBoxAnim;
         [SerializeField] Animator ClockAnim;
         [SerializeField] Animator PanelShakeAnim;
         [SerializeField] Animator MainCameraAnim;
@@ -42,7 +42,7 @@ namespace Controller
             ClockAnim.SetTrigger("StartClockAnim");
             PanelShakeAnim.SetTrigger("StartPanelShakeLOOP");
 
-            StartCoroutine(DelayDialogueButton(3f));            
+            StartCoroutine(DelayDialogueButton(4.5f));            
         }
 
         public IEnumerator ContiuneAnim()
@@ -55,19 +55,7 @@ namespace Controller
 
             yield return new WaitForSecondsRealtime(14f);
 
-            dialogueManager.DisplayNextSentences();
-
-            yield return new WaitForSecondsRealtime(2f);
-
-            dialogueManager.DisplayNextSentences();
-
-            yield return new WaitForSecondsRealtime(2f);
-            N_DialogueBoxAnim.SetBool("SlideStopAnim", true);
-            ResetAnim();
-            yield return new WaitForSecondsRealtime(2f);
-            
-            N_DialogueBoxAnim.gameObject.SetActive(false);
-            T_DialogueBoxAnim.gameObject.SetActive(false);
+            dialogueManager.DisplayNextSentences();            
             
         }
 
@@ -96,13 +84,16 @@ namespace Controller
             N_DialogueBoxAnim.SetBool("SlideStartAnim", true);            
         }
 
-        void ResetAnim()
+        public void ResetAnim()
         {  
             T_DialogueBoxAnim.SetBool("SlideStartAnim", false);
             N_DialogueBoxAnim.SetBool("SlideStartAnim", false);
 
             T_DialogueBoxAnim.SetBool("SlideStopAnim", false);
             N_DialogueBoxAnim.SetBool("SlideStopAnim", false);
+
+            N_DialogueBoxAnim.gameObject.SetActive(false);
+            T_DialogueBoxAnim.gameObject.SetActive(false);
 
         }
     }
