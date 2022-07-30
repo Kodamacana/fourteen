@@ -5,16 +5,27 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
-    public Text DialogueText;
+    [System.Serializable]
+    struct DialogueStruct
+    {
+        public string DialogueText;
+        public bool isNurdan;
+        public string FuncNote;
+    }
+    List<DialogueStruct> sentences;
 
-    public Queue<string> sentences;
-    public Queue<string> names;
-    // Start is called before the first frame update
+
+    [SerializeField] Controller.Controller controller;
+    [SerializeField] DialogueFuncs dialogueFuncs;
+    [SerializeField]
+     Text T_DialogueText;
+    [SerializeField]
+     Text N_DialogueText;    
+    
+
     void Start()
     {
-        sentences = new Queue<string>();
-        names = new Queue<string>();
+        sentences = new List<DialogueStruct>();
     }
 
     public void StartDialogue(Dialogue[] dialogue)
@@ -27,8 +38,11 @@ public class DialogueManager : MonoBehaviour
 
             foreach (string sentence in dialogue[i].sentences)
             {
-                sentences.Enqueue(sentence);
-                names.Enqueue(dialogue[i].name);
+                var snt = new DialogueStruct();
+                snt.DialogueText = sentence;
+                snt.isNurdan = dialogue[i].isNurdan;
+                snt.FuncNote = dialogue[i].FuncNote;
+                sentences.Add(snt);
             }
 
         }   
@@ -44,10 +58,22 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        string sentence = sentences.Dequeue();
-        string name = names.Dequeue();
-        DialogueText.text = sentence;
-
+        string sentence = sentences[0].DialogueText;
+        if (sentences[0].FuncNote != null && sentences[0].FuncNote != "" && sentences[0].FuncNote != " ")
+        {
+            dialogueFuncs.AllFunctions(sentences[0].FuncNote);
+        }
+        if (sentences[0].isNurdan)
+        {
+            N_DialogueText.text = sentence;
+            controller.Coroutine("N");
+        }
+        else
+        {
+            T_DialogueText.text = sentence;
+            controller.Coroutine("T");
+        }
+        sentences.Remove(sentences[0]);
 
     }
 
