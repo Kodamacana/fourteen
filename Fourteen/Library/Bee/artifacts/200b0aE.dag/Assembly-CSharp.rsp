@@ -336,10 +336,10 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scene0/DialogueText/Dialogue.cs"
+"Assets/Scene0/DialogueText/DialogueFuncs0.cs"
 "Assets/Scene0/DialogueText/DialogueManager.cs"
 "Assets/Scene0/DialogueText/DialogueTrigger.cs"
 "Assets/Scripts/Controller.cs"
-"Assets/Scripts/DialogueFuncs.cs"
 -langversion:9.0
 
 /deterministic

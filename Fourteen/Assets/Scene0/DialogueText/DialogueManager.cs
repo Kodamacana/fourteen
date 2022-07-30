@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
 
 
     [SerializeField] Controller.Controller controller;
-    [SerializeField] DialogueFuncs dialogueFuncs;
+    [SerializeField] DialogueFuncs0 dialogueFuncs;
     [SerializeField]
      Text T_DialogueText;
     [SerializeField]
@@ -84,8 +84,7 @@ public class DialogueManager : MonoBehaviour
         controller.T_DialogueBoxAnim.SetBool("SlideStopAnim", true);
         controller.ResetAnim();
 
-        controller.N_DialogueBoxAnim.gameObject.SetActive(false);
-        controller.T_DialogueBoxAnim.gameObject.SetActive(false);
+        
         Debug.Log("diyalog bitti");
     }
 }

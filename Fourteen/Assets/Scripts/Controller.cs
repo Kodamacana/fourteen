@@ -18,9 +18,9 @@ namespace Controller
 
         private void Start()
         {
+            MainCameraAnim.SetTrigger("ScreenFader");
             DialogueTrigger.TriggerDialogue();            
         }
-
 
         IEnumerator DelayDialogueButton(float delayTime)
         {
