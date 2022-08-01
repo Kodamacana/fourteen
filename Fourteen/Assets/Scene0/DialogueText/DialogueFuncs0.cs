@@ -16,6 +16,7 @@ public class DialogueFuncs0 : MonoBehaviour
         theMethod.Invoke(this, null);
     }
 
+
     public void startclock()
     {
         StartCoroutine(controller.StartIenum());

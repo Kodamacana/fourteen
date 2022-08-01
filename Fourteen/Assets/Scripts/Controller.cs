@@ -19,8 +19,15 @@ namespace Controller
         private void Start()
         {
             MainCameraAnim.SetTrigger("ScreenFader");
-            DialogueTrigger.TriggerDialogue();            
+            StartCoroutine(StartDialogue());            
         }
+
+        public IEnumerator StartDialogue()
+        {
+            yield return new WaitForSecondsRealtime(3);
+            DialogueTrigger.TriggerDialogue();
+        }
+
 
         IEnumerator DelayDialogueButton(float delayTime)
         {
