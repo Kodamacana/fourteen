@@ -59,6 +59,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences[0].DialogueText;
+        dialogueFuncs.MainCamFunc(); //Cam Pos Reset
         if (sentences[0].FuncNote != null && sentences[0].FuncNote != "" && sentences[0].FuncNote != " ")
         {
             dialogueFuncs.AllFunctions(sentences[0].FuncNote);

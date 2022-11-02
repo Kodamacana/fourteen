@@ -3,9 +3,13 @@ Library/Bee/artifacts/mvdfrm/UnityEditor.TestRunner.ref.dll_F5D2B13D9F86ABE8.mvf
 Library/Bee/artifacts/mvdfrm/UnityEditor.UI.ref.dll_C36BD85A8E0AE6AA.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEngine.TestRunner.ref.dll_C1F0FBEBCB4A09D3.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEngine.UI.ref.dll_7FD1AEB5942D0F15.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Android.Gradle.dll_0C65E34FFF89D415.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Android.Types.dll_452FABAB477E42F7.mvfrm
+Library/Bee/artifacts/mvdfrm/UnityEditor.Android.Extensions.dll_3C01F46406D45F75.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.Common.dll_0F54EE0F93F7E9D2.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.dll_1A24E7D41CBC2BB3.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.iOS.Extensions.Xcode.dll_76132AB8CCA3AD9A.mvfrm
+Library/Bee/artifacts/mvdfrm/UnityEditor.WindowsStandalone.Extensions.dll_E26CB1D89E28BDC3.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.Graphs.dll_419DD1C856BEEF6D.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_0414E5FD06B2603B.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.DeviceSimulatorModule.dll_E43DF60F83915F76.mvfrm
@@ -90,5 +94,10 @@ Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_6ABD3D464D798053.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_9D8494783FEE49CF.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_9D7C004AD6B3CDB1.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.OSXStandalone.Extensions.dll_961C5FD325B40340.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Burst.Cecil.dll_3812263A9D9986D5.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Burst.Cecil.Mdb.dll_CC9D0FA2EFD75752.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Burst.Cecil.Pdb.dll_E3EF88126E8C58D5.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Burst.Cecil.Rocks.dll_113D12D8BE407595.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Burst.Unsafe.dll_D7272BB0F1AD962E.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Plastic.Antlr3.Runtime.dll_97FFF7D562FFA36B.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Plastic.Newtonsoft.Json.dll_8BAFA063333F119A.mvfrm

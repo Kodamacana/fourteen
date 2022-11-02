@@ -23,13 +23,13 @@ namespace Controller
         }
 
         public IEnumerator StartDialogue()
-        {
+        {            
             yield return new WaitForSecondsRealtime(3);
             DialogueTrigger.TriggerDialogue();
         }
 
 
-        IEnumerator DelayDialogueButton(float delayTime)
+        public IEnumerator DelayDialogueButton(float delayTime)
         {
             var bttn = GameObject.FindGameObjectsWithTag("DialogueButton");
             foreach (var item in bttn)
@@ -49,7 +49,8 @@ namespace Controller
             ClockAnim.SetTrigger("StartClockAnim");
             PanelShakeAnim.SetTrigger("StartPanelShakeLOOP");
 
-            StartCoroutine(DelayDialogueButton(4.5f));            
+            yield return new WaitForSecondsRealtime(1f);
+            StartCoroutine(DelayDialogueButton(3.5f));            
         }
 
         public IEnumerator ContiuneAnim()
@@ -58,7 +59,9 @@ namespace Controller
             PanelShakeAnim.SetTrigger("StartPanelShake");
             MainCameraAnim.SetTrigger("ContiuneCameraShake");
 
-            StartCoroutine(DelayDialogueButton(14f));
+            yield return new WaitForSecondsRealtime(3f);
+            ResetAnim();
+            StartCoroutine(DelayDialogueButton(11f));
 
             yield return new WaitForSecondsRealtime(14f);
 
@@ -71,6 +74,8 @@ namespace Controller
             ResetAnim();
             if (Name.Equals("T")) DialogueTrigger_T();
             else DialogueTrigger_N();
+
+            StartCoroutine(DelayDialogueButton(0.7f));
         }
 
         
