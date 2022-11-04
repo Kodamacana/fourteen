@@ -32,6 +32,16 @@ public class DialogueFuncs0 : MonoBehaviour
         TCam.gameObject.SetActive(false);
     }
 
+    public void stagemiddle()
+    {
+
+    }
+
+    public void waitfood()
+    {
+
+    }
+
     public void startclock()
     {
         StartCoroutine(allAnimation.StartIenum());
@@ -59,10 +69,17 @@ public class DialogueFuncs0 : MonoBehaviour
     {
         //animator
     }
-
+    public void n_utan()
+    {
+        //animator
+    }
     public void flashcameraslide()
     {
         //camera flash belleğe doğru yaklaşır ekran kararır müzik kesilir e sakince sahne 1 başlar
         SceneManager.LoadScene("Scene1");
+    }
+    public void outSide()
+    {
+
     }
 }

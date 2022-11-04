@@ -12,7 +12,7 @@ namespace Controller.Scene0
         private void Start()
         {
             MainCameraAnim.SetTrigger("ScreenFader");
-            StartCoroutine(allAnimation.StartDialogue());            
+            StartCoroutine(allAnimation.StartDialogue(3f));            
         }       
     }
 }

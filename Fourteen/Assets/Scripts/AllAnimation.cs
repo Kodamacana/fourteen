@@ -37,9 +37,9 @@ public class AllAnimation : MonoBehaviour
 
     }
 
-    public IEnumerator StartDialogue()
+    public IEnumerator StartDialogue(float time)
     {
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSecondsRealtime(time);
         DialogueTrigger.TriggerDialogue();
     }
 
