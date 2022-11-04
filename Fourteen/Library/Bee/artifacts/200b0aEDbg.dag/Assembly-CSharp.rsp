@@ -359,6 +359,7 @@
 "Assets/Scene0/DialogueText/DialogueManager.cs"
 "Assets/Scene0/DialogueText/DialogueTrigger.cs"
 "Assets/Scripts/Controller.cs"
+"Assets/Scripts/Controller2.cs"
 -langversion:9.0
 
 /deterministic
