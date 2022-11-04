@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34761f51f252c47fdb1e2fe6d113e466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1609866211}
+  allAnimation: {fileID: 1609866213}
   dialogueFuncs: {fileID: 1609866212}
   T_DialogueText: {fileID: 384672656}
   N_DialogueText: {fileID: 1477239438}
@@ -1302,6 +1302,7 @@ GameObject:
   - component: {fileID: 1609866210}
   - component: {fileID: 1609866211}
   - component: {fileID: 1609866212}
+  - component: {fileID: 1609866213}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -1336,12 +1337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3b2d60ce8834ccdb36011320874d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 283054974}
-  DialogueTrigger: {fileID: 1192401362}
-  T_DialogueBoxAnim: {fileID: 1212982645}
-  N_DialogueBoxAnim: {fileID: 1761020355}
-  ClockAnim: {fileID: 1329696758}
-  PanelShakeAnim: {fileID: 616277882}
+  allAnimation: {fileID: 1609866213}
   MainCameraAnim: {fileID: 1736484540}
 --- !u!114 &1609866212
 MonoBehaviour:
@@ -1355,10 +1351,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6bab616cc3f4e4c867d15d94eb099c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1609866211}
+  allAnimation: {fileID: 1609866213}
   MainCam: {fileID: 1736484538}
   TCam: {fileID: 1978485306}
   NCam: {fileID: 570693167}
+--- !u!114 &1609866213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609866209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0b9cd0fedc2f3e449f2c5a653189134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 283054974}
+  DialogueTrigger: {fileID: 1192401362}
+  T_DialogueBoxAnim: {fileID: 1212982645}
+  N_DialogueBoxAnim: {fileID: 1761020355}
+  ClockAnim: {fileID: 1329696758}
+  PanelShakeAnim: {fileID: 616277882}
+  MainCameraAnim: {fileID: 1736484540}
 --- !u!1 &1736484536
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class DialogueFuncs0 : MonoBehaviour
 { 
-    [SerializeField] Controller.Controller controller;
+    [SerializeField] AllAnimation allAnimation;
     [SerializeField] Camera MainCam;
     [SerializeField] Camera TCam;
     [SerializeField] Camera NCam;
@@ -34,12 +34,12 @@ public class DialogueFuncs0 : MonoBehaviour
 
     public void startclock()
     {
-        StartCoroutine(controller.StartIenum());
+        StartCoroutine(allAnimation.StartIenum());
     }
     public void contiuneclock()
     {
         //hediye paketi yukarıdan düşsün ve fırın pişirme sesi duyulsun
-        StartCoroutine(controller.ContiuneAnim());
+        StartCoroutine(allAnimation.ContiuneAnim());
     }
     public void ngulme()
     {

@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
     List<DialogueStruct> sentences;
 
 
-    [SerializeField] Controller.Controller controller;
+    [SerializeField] AllAnimation allAnimation;
     [SerializeField] DialogueFuncs0 dialogueFuncs;
     [SerializeField]
      Text T_DialogueText;
@@ -67,12 +67,12 @@ public class DialogueManager : MonoBehaviour
         if (sentences[0].isNurdan)
         {
             N_DialogueText.text = sentence;
-            controller.Coroutine("N");
+            allAnimation.Coroutine("N");
         }
         else
         {
             T_DialogueText.text = sentence;
-            controller.Coroutine("T");
+            allAnimation.Coroutine("T");
         }
         sentences.Remove(sentences[0]);
 
@@ -81,9 +81,9 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
 
-        controller.N_DialogueBoxAnim.SetBool("SlideStopAnim", true);
-        controller.T_DialogueBoxAnim.SetBool("SlideStopAnim", true);
-        controller.ResetAnim();
+        allAnimation.N_DialogueBoxAnim.SetBool("SlideStopAnim", true);
+        allAnimation.T_DialogueBoxAnim.SetBool("SlideStopAnim", true);
+        allAnimation.ResetAnim();
 
         
         Debug.Log("diyalog bitti");
