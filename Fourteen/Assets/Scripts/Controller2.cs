@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Controller2 : MonoBehaviour
@@ -9,11 +10,13 @@ public class Controller2 : MonoBehaviour
     [SerializeField] DialogueManager dialogueManager;
     [SerializeField] GameObject NDialogueBlock;
     [SerializeField] GameObject TDialogueBlock;
-
-    public int HeartValue = 25;
+    public Text heartNum;
+    int heartNumINT = 0;
+    int HeartValue = 25;
 
     private void Start()
     {
+        heartNum.text = heartNumINT.ToString();
         StartCoroutine(allAnimation.StartDialogue(2f));
         StartCoroutine(AnimLoop());
     }
@@ -35,6 +38,9 @@ public class Controller2 : MonoBehaviour
     public void HeartVal()
     {
         HeartValue -= 1;
+        heartNumINT += 1;
+        heartNum.text = heartNumINT.ToString();
+
         if (HeartValue <= 0)
         {
             dialogueManager.DisplayNextSentences();
