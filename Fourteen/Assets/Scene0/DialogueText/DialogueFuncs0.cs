@@ -11,6 +11,7 @@ public class DialogueFuncs0 : MonoBehaviour
     [SerializeField] Camera MainCam;
     [SerializeField] Camera TCam;
     [SerializeField] Camera NCam;
+    [SerializeField] Controller6 controller6;
 
     public void AllFunctions(string ParameterName)
     {
@@ -66,6 +67,15 @@ public class DialogueFuncs0 : MonoBehaviour
     public void n_usume()
     {
 
+    }
+    public void t_baloncukkalp()
+    {
+
+    }
+    public void Tspecial()
+    {
+        controller6.SpecialPower();
+        //N kontrol kapat T kontrol etsin
     }
     public void N_Cam()
     {
