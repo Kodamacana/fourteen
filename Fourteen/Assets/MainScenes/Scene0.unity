@@ -1893,7 +1893,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7822884056188171362, guid: 45473cfcb74c5c146999cbb4b5883996, type: 3}
+    - {fileID: 9073163970381699003, guid: 45473cfcb74c5c146999cbb4b5883996, type: 3}
+    - {fileID: 2644880090576744895, guid: 45473cfcb74c5c146999cbb4b5883996, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 45473cfcb74c5c146999cbb4b5883996, type: 3}
 --- !u!224 &1783858023146912846 stripped
 RectTransform:
