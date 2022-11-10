@@ -123,9 +123,9 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &18031171 stripped
+--- !u!1 &183934252 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5461639170312550460, guid: 06e1bd038d43a4b38a8976cfa2196248,
+  m_CorrespondingSourceObject: {fileID: 2138901926706691104, guid: 06e1bd038d43a4b38a8976cfa2196248,
     type: 3}
   m_PrefabInstance: {fileID: 5461639169100619085}
   m_PrefabAsset: {fileID: 0}
@@ -494,6 +494,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 515842718}
   runSpeed: 8
+--- !u!1 &551588390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8687725502079873218, guid: 06e1bd038d43a4b38a8976cfa2196248,
+    type: 3}
+  m_PrefabInstance: {fileID: 5461639169100619085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &676268439
 GameObject:
   m_ObjectHideFlags: 0
@@ -35283,8 +35289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allAnimation: {fileID: 1609866213}
   dialogueManager: {fileID: 283054974}
-  NDialogueBlock: {fileID: 18031171}
-  TDialogueBlock: {fileID: 1760606375}
+  NDialogueBlock: {fileID: 183934252}
+  TDialogueBlock: {fileID: 551588390}
   heartNum: {fileID: 816437949}
 --- !u!1 &1703472051
 GameObject:
@@ -35458,12 +35464,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1760606375 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5461639169514467362, guid: 06e1bd038d43a4b38a8976cfa2196248,
-    type: 3}
-  m_PrefabInstance: {fileID: 5461639169100619085}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1792176018 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5461639169514467388, guid: 06e1bd038d43a4b38a8976cfa2196248,
