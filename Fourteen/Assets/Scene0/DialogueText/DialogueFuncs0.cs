@@ -55,6 +55,18 @@ public class DialogueFuncs0 : MonoBehaviour
     {
 
     }
+    public void tgulme()
+    {
+
+    }
+    public void t_usume()
+    {
+
+    }
+    public void n_usume()
+    {
+
+    }
     public void N_Cam()
     {
         MainCam.gameObject.SetActive(false);
