@@ -13,11 +13,12 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
-	private bool m_Grounded;            // Whether or not the player is grounded.
+	[SerializeField]private bool m_Grounded;            // Whether or not the player is grounded.
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
-	private Rigidbody2D m_Rigidbody2D;
+	public Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
+	private bool wings = false;
 
 	[Header("Events")]
 	[Space]
@@ -43,7 +44,15 @@ public class CharacterController2D : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		bool wasGrounded = m_Grounded;
+        if (Input.GetKey(KeyCode.Space) && wings)
+        {
+			if (m_Rigidbody2D.velocity.y < 0)
+			{
+				m_Rigidbody2D.gravityScale = 0.05f;
+			}
+		}
+		
+			bool wasGrounded = m_Grounded;
 		m_Grounded = false;
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -53,6 +62,7 @@ public class CharacterController2D : MonoBehaviour
 		{
 			if (colliders[i].gameObject != gameObject)
 			{
+				m_Rigidbody2D.gravityScale = 1f;
 				m_Grounded = true;
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
@@ -61,8 +71,9 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool crouch, bool jump)
+	public void Move(float move, bool crouch, bool jump, bool isSpecial, bool space)
 	{
+		
 		// If crouching, check to see if the character can stand up
 		if (!crouch)
 		{
@@ -124,12 +135,42 @@ public class CharacterController2D : MonoBehaviour
 				Flip();
 			}
 		}
+
+        if (space)
+		{ 
+			//kanatları çıkart
+			m_Rigidbody2D.gravityScale = 0.7f;
+		}
+        else if (!space)
+        {
+			//kanatları gizle
+			m_Rigidbody2D.gravityScale = 1f;
+		}
+		wings = space;
+
 		// If the player should jump...
 		if (m_Grounded && jump)
 		{
-			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+		}	
+		else if ((!m_Grounded && jump) && (isSpecial && space))
+		{
+			var vel = m_Rigidbody2D.velocity;
+			m_Rigidbody2D.gravityScale = 0.7f;
+
+            if (m_Rigidbody2D.position.y <= 2f)
+			{
+				if (vel.y > 0)
+				{
+					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce / 2));
+				}
+                else if (vel.y < 0)
+                {
+					m_Rigidbody2D.gravityScale = 0.2f;
+					m_Rigidbody2D.AddForce(new Vector2(0f, (m_JumpForce / 2) - vel.y * 1700));
+				}
+			}
 		}
 	}
 

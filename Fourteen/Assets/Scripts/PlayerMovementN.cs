@@ -10,16 +10,25 @@ public class PlayerMovementN : MonoBehaviour
 
     float horizontalMove = 0f;
     bool jump = false;
+    bool space = false;
     bool crouch = false;
-
+    public bool isSpecialPower = false;
    
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("HorizontalN") * runSpeed;
+        if (!Input.GetKey(KeyCode.Space))
+        {
+            horizontalMove = Input.GetAxisRaw("HorizontalN") * runSpeed;
+        }
 
         if (Input.GetButtonDown("JumpN"))
         {
             jump = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            space = !space;
         }
 
         if (Input.GetButtonDown("CrouchN"))
@@ -34,7 +43,12 @@ public class PlayerMovementN : MonoBehaviour
 
     private void FixedUpdate()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+        if (Input.GetKey(KeyCode.Space) && space)
+        {
+            horizontalMove = Input.GetAxisRaw("HorizontalN") * runSpeed * (Mathf.Abs(transform.GetComponent<CharacterController2D>().m_Rigidbody2D.velocity.y* 0.3f) +1f);
+        }
+
+        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump, isSpecialPower, space);
         jump = false;
     }
 }
