@@ -10,18 +10,39 @@ public class PlayerMovementT : MonoBehaviour
 
     float horizontalMove = 0f;
     bool jump = false;
+    bool space = false;
     bool crouch = false;
 
-   
+
+    void specialPower()
+    {
+        if (space)
+        {
+            transform.GetComponent<CharacterController2D>().m_JumpForce *= 2;
+        }
+        else
+        {
+            transform.GetComponent<CharacterController2D>().m_JumpForce /= 2;
+        }
+    }
+
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("HorizontalT") * runSpeed;
+        if (space)
+        {
+            horizontalMove = Input.GetAxisRaw("HorizontalT") * runSpeed * 2;
+        }
 
         if (Input.GetButtonDown("JumpT"))
         {
             jump = true;
         }
-
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            space = !space;
+            specialPower();
+        }
         if (Input.GetButtonDown("CrouchT"))
         {
             crouch = true;

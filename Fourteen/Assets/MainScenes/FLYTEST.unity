@@ -456,6 +456,7 @@ MonoBehaviour:
   m_CeilingCheck: {fileID: 1703472052}
   m_CrouchDisableCollider: {fileID: 515842715}
   m_Grounded: 0
+  m_Rigidbody2D: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -626,6 +627,7 @@ GameObject:
   m_Component:
   - component: {fileID: 785698672}
   - component: {fileID: 785698673}
+  - component: {fileID: 785698674}
   m_Layer: 0
   m_Name: N-IDLE png
   m_TagString: Untagged
@@ -641,7 +643,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785698671}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.075, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -689,7 +691,7 @@ SpriteRenderer:
   m_SortingLayerID: 347919451
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 02f91c3c82d0e4bf18ce046b41aa4b23, type: 3}
+  m_Sprite: {fileID: 2131117653, guid: 552581c73684743b9b910722c054d361, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -700,6 +702,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &785698674
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785698671}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9f4ba3a9eec5c40119522ab44955d3c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &816437949 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6699890953802262530, guid: 631b02b48ff11474983651fd4814ae2b,
@@ -34525,6 +34547,7 @@ MonoBehaviour:
   m_CeilingCheck: {fileID: 762562535}
   m_CrouchDisableCollider: {fileID: 991229266}
   m_Grounded: 0
+  m_Rigidbody2D: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -35108,6 +35131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526807944}
   - component: {fileID: 1526807945}
+  - component: {fileID: 1526807946}
   m_Layer: 0
   m_Name: T-IDLE png
   m_TagString: Untagged
@@ -35123,7 +35147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526807943}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.048, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35171,7 +35195,7 @@ SpriteRenderer:
   m_SortingLayerID: 347919451
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 9f630b29ca6434cadac369dd38c1e88b, type: 3}
+  m_Sprite: {fileID: -1708039783, guid: b9d3fe38bfc51411eb58e7e6e4ace2da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -35182,6 +35206,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1526807946
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526807943}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df2207d39c4a24468a11d060d00292e3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1586786318
 GameObject:
   m_ObjectHideFlags: 0
