@@ -49,8 +49,6 @@ GameObject:
   - component: {fileID: 1783858022810809997}
   - component: {fileID: 1783858022810809999}
   - component: {fileID: 1783858022810809996}
-  - component: {fileID: 2644880090576744895}
-  - component: {fileID: 9073163970381699003}
   m_Layer: 5
   m_Name: N
   m_TagString: Untagged
@@ -116,48 +114,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2644880090576744895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783858022810810098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d72ab7e8142c52246a42a2cd8a60083c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  runSpeed: 40
---- !u!114 &9073163970381699003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783858022810810098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3554ec78fc16d4195173483bd7a9ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_JumpForce: 400
-  m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.05
-  m_AirControl: 0
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  m_GroundCheck: {fileID: 0}
-  m_CeilingCheck: {fileID: 0}
-  m_CrouchDisableCollider: {fileID: 0}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1783858023887870472
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +125,6 @@ GameObject:
   - component: {fileID: 1783858023887870475}
   - component: {fileID: 1783858023887870469}
   - component: {fileID: 1783858023887870474}
-  - component: {fileID: 7822884056188171362}
   m_Layer: 5
   m_Name: T
   m_TagString: Untagged
@@ -235,31 +190,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7822884056188171362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783858023887870472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3554ec78fc16d4195173483bd7a9ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_JumpForce: 400
-  m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.05
-  m_AirControl: 0
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  m_GroundCheck: {fileID: 0}
-  m_CeilingCheck: {fileID: 0}
-  m_CrouchDisableCollider: {fileID: 0}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []
