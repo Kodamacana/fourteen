@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovementT : MonoBehaviour
 {
     public CharacterController2D controller;
+    [SerializeField] Animator T_Animator;
 
     public float runSpeed = 40f;
 
@@ -37,6 +38,7 @@ public class PlayerMovementT : MonoBehaviour
         if (Input.GetButtonDown("JumpT"))
         {
             jump = true;
+            T_Animator.SetBool("Run", false);
         }
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -55,6 +57,20 @@ public class PlayerMovementT : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (Input.GetAxisRaw("HorizontalT") == 0)
+        {
+            T_Animator.SetBool("Run", false);
+            T_Animator.SetBool("SRun", false);
+        }
+        else if(space)
+        {
+            T_Animator.SetBool("SRun", true);
+        }
+        else
+        {
+            T_Animator.SetBool("Run", true);
+        }
+
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump, false, false);
         jump = false;
     }
