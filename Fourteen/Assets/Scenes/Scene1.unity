@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34761f51f252c47fdb1e2fe6d113e466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  allAnimation: {fileID: 0}
   dialogueFuncs: {fileID: 1609866212}
   T_DialogueText: {fileID: 384672656}
   N_DialogueText: {fileID: 1477239438}
@@ -1240,10 +1240,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6bab616cc3f4e4c867d15d94eb099c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  allAnimation: {fileID: 0}
   MainCam: {fileID: 1736484538}
-  TCam: {fileID: 0}
-  NCam: {fileID: 0}
+  TCam: {fileID: 1783858023146912847}
+  NCam: {fileID: 1783858023146912846}
+  controller6: {fileID: 0}
 --- !u!1 &1736484536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,6 +1671,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45473cfcb74c5c146999cbb4b5883996, type: 3}
+--- !u!20 &1783858023146912846 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 570693167, guid: 45473cfcb74c5c146999cbb4b5883996,
+    type: 3}
+  m_PrefabInstance: {fileID: 1783858023146912845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1783858023146912847 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1978485306, guid: 45473cfcb74c5c146999cbb4b5883996,
+    type: 3}
+  m_PrefabInstance: {fileID: 1783858023146912845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5461639169100619085
 PrefabInstance:
   m_ObjectHideFlags: 0
