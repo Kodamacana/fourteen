@@ -647,7 +647,7 @@ RectTransform:
   m_GameObject: {fileID: 1043979028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9999998, y: 1, z: 0.9999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 549882365}
@@ -655,7 +655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1423.8142}
+  m_AnchoredPosition: {x: 0, y: -1423.8153}
   m_SizeDelta: {x: 3434.2, y: 1563.528}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1043979030
@@ -933,6 +933,7 @@ GameObject:
   - component: {fileID: 1329696757}
   - component: {fileID: 1329696756}
   - component: {fileID: 1329696758}
+  - component: {fileID: 1329696759}
   m_Layer: 5
   m_Name: Clock
   m_TagString: Untagged
@@ -1021,6 +1022,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1329696759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329696754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362bbbbce343b064cade89ab6621e95b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameobj: {fileID: 1043979028}
 --- !u!850595691 &1374804092
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1599,7 +1613,7 @@ PrefabInstance:
     - target: {fileID: 1783858022383159682, guid: 45473cfcb74c5c146999cbb4b5883996,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1783858022383159682, guid: 45473cfcb74c5c146999cbb4b5883996,
         type: 3}
