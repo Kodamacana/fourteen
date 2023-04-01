@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AllAnimation : MonoBehaviour
 {
@@ -95,4 +96,32 @@ public class AllAnimation : MonoBehaviour
         T_DialogueBoxAnim.gameObject.SetActive(false);
 
     }
+
+
+    public IEnumerator OpeningGift()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        ResetAnim();
+        StartCoroutine(DelayDialogueButton(11f));
+        yield return new WaitForSecondsRealtime(2f);
+
+        //gift opening animation start
+
+
+
+        yield return new WaitForSecondsRealtime(5f);
+
+        dialogueManager.DisplayNextSentences();
+    }
+
+    public IEnumerator flashcameraslide()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        ResetAnim();
+        StartCoroutine(DelayDialogueButton(3f));
+        yield return new WaitForSecondsRealtime(3f);
+
+        MainCameraAnim.SetTrigger("ZoomIn");
+    }
+    
 }

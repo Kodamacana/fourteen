@@ -97,11 +97,18 @@ public class DialogueFuncs0 : MonoBehaviour
     }
     public void flashcameraslide()
     {
-        //camera flash belleğe doğru yaklaşır ekran kararır müzik kesilir e sakince sahne 1 başlar
-        SceneManager.LoadScene("Scene1");
+        StartCoroutine(allAnimation.flashcameraslide());
+        
     }
     public void outSide()
     {
 
     }
+
+    public void OpeningGift()
+    {
+        StartCoroutine(allAnimation.OpeningGift()) ;
+    }
+
+
 }
