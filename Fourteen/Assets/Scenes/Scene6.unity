@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.40479597, g: 0.12801105, b: 0.52640903, a: 1}
+  m_IndirectSpecularColor: {r: 0.40479586, g: 0.12801096, b: 0.52640873, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 152054001}
+  T_Animator: {fileID: 0}
   runSpeed: 8
 --- !u!114 &152054001
 MonoBehaviour:
@@ -233,6 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf3554ec78fc16d4195173483bd7a9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Animator: {fileID: 0}
   m_JumpForce: 3500
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.034
@@ -593,6 +595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf3554ec78fc16d4195173483bd7a9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Animator: {fileID: 0}
   m_JumpForce: 3500
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.034
@@ -643,10 +646,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 515842718}
+  T_Animator: {fileID: 0}
   runSpeed: 8
 --- !u!95 &515842721
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -663,7 +667,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &551588390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8687725502079873218, guid: 06e1bd038d43a4b38a8976cfa2196248,
@@ -34700,6 +34705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 991229269}
+  N_Animator: {fileID: 0}
   runSpeed: 8
   isSpecialPower: 0
 --- !u!114 &991229269
@@ -34714,6 +34720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf3554ec78fc16d4195173483bd7a9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Animator: {fileID: 0}
   m_JumpForce: 3500
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.034
@@ -34970,7 +34977,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -35110,6 +35117,75 @@ Transform:
   m_Father: {fileID: 515842719}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1287985822
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104962, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_Name
+      value: SFX
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 062b5e433a888814b8dfa29c2322ef73, type: 3}
 --- !u!850595691 &1374804092
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -35791,7 +35867,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1736484540
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -35808,7 +35884,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1736484541
 MonoBehaviour:
   m_ObjectHideFlags: 0

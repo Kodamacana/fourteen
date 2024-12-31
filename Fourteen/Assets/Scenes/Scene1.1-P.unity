@@ -197,6 +197,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9746dc5a0d67b40de8fc9bfb3cfd1c9e, type: 3}
+--- !u!20 &262860106 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8988328522365973486, guid: 9746dc5a0d67b40de8fc9bfb3cfd1c9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 262860105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &283054973
 GameObject:
   m_ObjectHideFlags: 0
@@ -4428,36 +4434,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - sentences:
-    - Nurdan..
+    - N..
     isNurdan: 0
     FuncNote: 
   - sentences:
-    - "Bence birbirimize \xE7ok uyduk."
+    - "Bu diyaloglar\u0131 siliyorum"
     isNurdan: 0
     FuncNote: t_utan
   - sentences:
-    - :) Evet
+    - "Bu diyaloglar\u0131 siliyorum"
     isNurdan: 1
     FuncNote: 
   - sentences:
-    - "Ben bo\u015F bo\u015F laf\u0131 doland\u0131rmam"
+    - "Bu diyaloglar\u0131 siliyorum"
     isNurdan: 0
     FuncNote: 
   - sentences:
-    - Hmm..
+    - "Bu diyaloglar\u0131 siliyorum"
     isNurdan: 1
     FuncNote: waitfood
   - sentences:
-    - "Ben seni arkada\u015F\u0131m olarak g\xF6rm\xFCyorum."
+    - "Bu diyaloglar\u0131 siliyorum"
     isNurdan: 0
     FuncNote: stagemiddle
   - sentences:
-    - "Hmmmm, ne olarak g\xF6r\xFCyorsun?"
+    - "Bu diyaloglar\u0131 siliyorum"
     isNurdan: 1
     FuncNote: ngulme
   - sentences:
-    - "Bilmem, arkada\u015Ftan \xF6te olarak d\xFC\u015F\xFCnd\xFC\u011F\xFCm\xFC
-      bilmeni istedim."
+    - "Bu diyaloglar\u0131 siliyorum"
     isNurdan: 0
     FuncNote: t_utan+n_utan+outSide
 --- !u!95 &1225542706 stripped
@@ -4466,6 +4471,75 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 5461639169100619085}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1279295814
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104960, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906748927812104962, guid: 062b5e433a888814b8dfa29c2322ef73,
+        type: 3}
+      propertyPath: m_Name
+      value: SFX
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 062b5e433a888814b8dfa29c2322ef73, type: 3}
 --- !u!1 &1349509523 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2138901926706691104, guid: 06e1bd038d43a4b38a8976cfa2196248,
@@ -4802,7 +4876,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609866209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 336.3075, y: 299.38983, z: -926.0214}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4823,8 +4897,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allAnimation: {fileID: 1609866213}
   MainCam: {fileID: 1736484538}
-  TCam: {fileID: 0}
-  NCam: {fileID: 0}
+  TCam: {fileID: 1859374286}
+  NCam: {fileID: 262860106}
   controller6: {fileID: 0}
 --- !u!114 &1609866213
 MonoBehaviour:
@@ -4957,7 +5031,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1736484540
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4974,7 +5048,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1736484542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5261,6 +5336,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4664bae60f8c1451181f6b5268a40f5f, type: 3}
+--- !u!20 &1859374286 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2408460012282468199, guid: 4664bae60f8c1451181f6b5268a40f5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1859374285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1983597347
 GameObject:
   m_ObjectHideFlags: 0
